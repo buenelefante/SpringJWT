@@ -1,0 +1,47 @@
+spring:
+
+  resources:
+    static-locations: classpath:/templates/,classpath:/static/
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    servlet:
+      content-type: text/html
+    cache: false
+  datasource:
+    username: root
+    password: mySQL2022#
+    url: jdbc:mysql://localhost:3306/worktest
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    filters: stat,wall,log4j
+
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: false
+    maxPoolPreparedStatementPerConnectionSize: 20
+    connectionProperties:
+      druid:
+        stat:
+          mergeSql: true
+          slowSqlMillis: 5000
+
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false

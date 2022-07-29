@@ -1,0 +1,101 @@
+.form-control {
+  line-height: 1px;
+  font-size: 0.75rem;
+  border-radius: 10px;
+  background: #f8f8f8;
+}
+.form-control-lg {
+  border-radius: 5px;
+}
+.search {
+  position: relative;
+}
+h4 {
+  font-weight: bold;
+}
+.search input {
+  height: 35px;
+  padding: 0 10px 0 45px;
+  backdrop-filter: blur(15px);
+}
+.search .fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  padding-right: 10px;
+  border-right: 1px solid #8c9ef7;
+}
+.navbar-brand {
+  color: #29292f;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.center-title {
+  font-size: 1rem;
+  color: #8c9ef7;
+}
+.btn-outline-success {
+  border: none;
+}
+
+.navbar-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.fa-solid,
+.fa-regular,
+.fa-brands{
+  color: #8c9ef7;
+  margin-right: 10px;
+}
+.fa-solid:hover,
+.fa-regular:hover,
+.fa-brands:hover{
+  color: #e16036;
+}
+.list-group,
+.list-group-item {
+  border: none;
+}
+.list-group2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.accordion-body ul li {
+  list-style: none;
+}
+.accordion-item {
+  background-color: #fff;
+  border: none;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  opacity: 0.8;
+}
+.card:hover {
+  opacity: 1;
+}
+.accordion {
+  border: 1px solid #E2E3E5;
+}
+.enter {
+  margin-top: 20px;
+}
+.title p {
+  font-size: 0.75rem;
+}
+.form-control-lg {
+  border-radius: 5px;
+}
+.grey {
+  border-radius: 5px;
+}
+.grey p {
+  color: #949494;
+  line-height: normal;
+}
